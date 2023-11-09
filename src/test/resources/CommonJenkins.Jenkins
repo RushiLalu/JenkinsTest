@@ -2,31 +2,27 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello1') {
-            steps {
-                echo 'Hello World1'
-            }
-        }
-        stage('Hello2') {
-            steps {
-                echo 'Hello World2'
-            }
-        }
-        stage('Hello3') {
-            steps {
-                echo 'Hello World3'
-            }
-        }
-        stage('Hello4') {
-                    steps {
-                        echo 'Hello World4'
-                    }
-                }
+         stage ('Build')
+         {
+                echo 'Hello Build -1'
+          }
+                    stage ('Test') {
+                                        echo 'Hello Test -1'
 
-                stage('Hello5') {
-                            steps {
-                                echo 'Hello World5'
-                            }
-                        }
+                    }
+                    stage ('QA') {
+                                        echo 'Hello QA -1'
+
+                    }
+                    stage ('Deploy') {
+                                        echo 'Hello Deploy -1'
+
+                    }
+                    stage ('Monitor') {
+                                        echo 'Hello Monitor -1'
+
+                    }
+
+
     }
 }
