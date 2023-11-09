@@ -17,5 +17,16 @@ pipeline {
                 echo 'Hello World2'
             }
         }
+        stage('Hello4') {
+                    steps {
+                        echo 'Hello World2'
+                    }
+                }
+
+                stage('Hello5') {
+                            steps {
+                                echo 'Hello World2'
+                            }
+                        }
     }
 }
